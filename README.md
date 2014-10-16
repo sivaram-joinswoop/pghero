@@ -9,3 +9,5 @@ To demo this and run it on OS X with boot2docker installed, you can connect to a
 ```
 docker run -ti -e DATABASE_URL=postgres://user@10.0.2.2:5432/myapp_development -p 8080:8080 bmorton/pghero
 ```
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/ankane/pghero_solo)

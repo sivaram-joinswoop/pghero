@@ -7,6 +7,16 @@
     "PGHERO_DATABASE_URL": {
       "description": "The database to observe",
       "value": ""
+    },
+    "PGHERO_USERNAME": {
+      "description": "Username for basic auth",
+      "value": "",
+      "required": false
+    },
+    "PGHERO_PASSWORD": {
+      "description": "Password for basic auth",
+      "value": "",
+      "required": false
     }
   }
 }

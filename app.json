@@ -1,0 +1,12 @@
+{
+  "name": "PgHero Solo",
+  "description": "Postgres insights made easy",
+  "repository": "https://github.com/bmorton/pghero_solo",
+  "keywords": ["postgres"],
+  "env": {
+    "PGHERO_DATABASE_URL": {
+      "description": "The database to observe",
+      "value": ""
+    }
+  }
+}

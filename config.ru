@@ -14,7 +14,7 @@ class PGHeroSolo < Rails::Application
   config.eager_load = true
   config.consider_all_requests_local = false
   config.secret_key_base = ENV['SECRET_KEY_BASE'] || SecureRandom.hex(30)
-  config.force_ssl = Rails.env.production?
+  # config.force_ssl = Rails.env.production?
 end
 
 PGHeroSolo.initialize!

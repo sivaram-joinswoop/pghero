@@ -5,16 +5,16 @@
   "keywords": ["postgres"],
   "env": {
     "PGHERO_DATABASE_URL": {
-      "description": "The database to observe",
+      "description": "The database to observe - copy DATABASE_URL from your app",
       "value": ""
     },
     "PGHERO_USERNAME": {
-      "description": "Username for basic auth",
+      "description": "Username for authentication",
       "value": "",
       "required": false
     },
     "PGHERO_PASSWORD": {
-      "description": "Password for basic auth",
+      "description": "Password for authentication",
       "value": "",
       "required": false
     }

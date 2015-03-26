@@ -1,2 +1,3 @@
-dependencies:
-  - libxml2
+targets:
+  ubuntu-12.04:
+  ubuntu-14.04:

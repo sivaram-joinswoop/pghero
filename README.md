@@ -1,3 +1,3 @@
 # PgHero
 
-[View the docs](https://github.com/ankane/pghero)
+:fire: [View the docs](https://github.com/ankane/pghero)

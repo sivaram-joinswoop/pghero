@@ -1,7 +1,7 @@
 {
-  "name": "PgHero Solo",
+  "name": "PgHero",
   "description": "Postgres insights made easy",
-  "repository": "https://github.com/bmorton/pghero_solo",
+  "repository": "https://github.com/pghero/pghero",
   "keywords": ["postgres"],
   "env": {
     "PGHERO_DATABASE_URL": {

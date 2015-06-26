@@ -120,5 +120,5 @@ DEPENDENCIES
   pg
   pghero
   puma
-  rails (~> 4.2.0)
+  rails (~> 4.2.3)
   rails_12factor (~> 0.0.3)

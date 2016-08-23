@@ -5,6 +5,4 @@ targets:
   debian-7:
   debian-8:
   centos-7:
-  centos-6:
   sles-12:
-  sles-11:

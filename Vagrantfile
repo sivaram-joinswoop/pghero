@@ -18,6 +18,7 @@ sudo service pghero restart
     c.vm.box = "debian/jessie64"
     c.vm.network "forwarded_port", guest: 3002, host: 3002
     c.vm.provision "shell", inline: <<-SCRIPT
+sudo apt-get -y install apt-transport-https
 wget -qO - https://deb.packager.io/key | sudo apt-key add -
 echo "deb https://deb.packager.io/gh/pghero/pghero jessie master" | sudo tee /etc/apt/sources.list.d/pghero.list
 sudo apt-get update

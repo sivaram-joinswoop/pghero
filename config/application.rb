@@ -1,6 +1,6 @@
 require "bundler/setup"
-Bundler.require
 require "rails/all"
+Bundler.require(*Rails.groups)
 
 module PgHeroSolo
   class Application < Rails::Application

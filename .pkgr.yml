@@ -11,3 +11,5 @@ targets:
   debian-8:
   centos-7:
   sles-12:
+env:
+  - RAILS_LOG_TO_STDOUT=false

@@ -1,6 +1,6 @@
 {
   "name": "PgHero",
-  "description": "Postgres insights made easy",
+  "description": "A performance dashboard for Postgres",
   "repository": "https://github.com/pghero/pghero",
   "keywords": ["postgres"],
   "env": {

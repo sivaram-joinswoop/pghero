@@ -1,26 +1,26 @@
-FROM yammer/ruby:2.1.3
-MAINTAINER Brian Morton "bmorton@yammer-inc.com"
+FROM ruby:2.3.1
 
-# Install dependencies for gems
-RUN apt-get update
-# pg gem
-RUN apt-get -y install libpq-dev
+MAINTAINER Andrew Kane <andrew@chartkick.com>
 
-# Install PostgreSQL client
-RUN locale-gen en_US.UTF-8
-RUN curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" >> /etc/apt/sources.list
-RUN apt-get -y update && apt-get -y install postgresql-client
+RUN apt-get update && apt-get install -qq -y --no-install-recommends \
+  build-essential nodejs libpq-dev
 
-# Add and install gem dependencies
-ADD Gemfile       /app/Gemfile
-ADD Gemfile.lock  /app/Gemfile.lock
-RUN bash -l -c "cd /app && bundle install -j4"
+ENV INSTALL_PATH /app
 
-ADD . /app
+RUN mkdir -p $INSTALL_PATH
 
-WORKDIR /app
+WORKDIR $INSTALL_PATH
+
+COPY Gemfile Gemfile.lock ./
+
+RUN bundle install --binstubs
+
+COPY . .
+
+RUN bundle exec rake RAILS_ENV=production DATABASE_URL=postgresql://user:pass@127.0.0.1/dbname SECRET_TOKEN=dummytoken assets:precompile
+
+ENV PORT 8080
+
 EXPOSE 8080
 
-ENTRYPOINT ["chruby-exec", "ruby", "--"]
-CMD ["bundle exec puma -t ${PUMA_MIN_THREADS:-8}:${PUMA_MAX_THREADS:-12} -w ${PUMA_WORKERS:-1} -p 8080 -e ${RACK_ENV:-production} --preload"]
+CMD puma -C config/puma.rb

@@ -1,13 +1,29 @@
 default_dependencies: false
-dependencies:
-  - libpq5
-  - libxml2
-  - libxslt1.1
 targets:
   ubuntu-16.04:
+    dependencies: &dependencies
+      - libpq5
+      - libxml2
+      - libxslt1.1
   ubuntu-14.04:
+    dependencies:
+      <<: *dependencies
   ubuntu-12.04:
+    dependencies:
+      <<: *dependencies
   debian-7:
+    dependencies:
+      <<: *dependencies
   debian-8:
+    dependencies:
+      <<: *dependencies
   centos-7:
+    dependencies:
+      - libxml2
+      - libxslt
+      - postgresql-libs
   sles-12:
+    dependencies:
+      - libxml2
+      - libxslt
+      - postgresql93

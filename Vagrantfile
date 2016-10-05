@@ -54,7 +54,7 @@ echo "[pghero]
 name=Repository for pghero/pghero application.
 baseurl=https://rpm.packager.io/gh/pghero/pghero/centos7/master
 enabled=1" | sudo tee /etc/yum.repos.d/pghero.repo
-sudo yum install pghero
+sudo yum -y install pghero
 sudo pghero config:set PORT=3004
 sudo pghero config:set DATABASE_URL=postgres://10.0.2.2/pghero_test
 sudo pghero scale web=1

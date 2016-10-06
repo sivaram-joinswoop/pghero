@@ -61,4 +61,22 @@ sudo pghero scale web=1
 sudo service pghero restart
     SCRIPT
   end
+
+  # unsupported
+  config.vm.define "fedora24" do |c|
+    c.vm.box = "fedora/24-cloud-base"
+    c.vm.network "forwarded_port", guest: 3005, host: 3005
+    c.vm.provision "shell", inline: <<-SCRIPT
+sudo rpm --import https://rpm.packager.io/key
+echo "[pghero]
+name=Repository for pghero/pghero application.
+baseurl=https://rpm.packager.io/gh/pghero/pghero/centos7/master
+enabled=1" | sudo tee /etc/yum.repos.d/pghero.repo
+sudo dnf -y install pghero
+sudo pghero config:set PORT=3005
+sudo pghero config:set DATABASE_URL=postgres://10.0.2.2/pghero_test
+sudo pghero scale web=1
+sudo service pghero restart
+    SCRIPT
+  end
 end

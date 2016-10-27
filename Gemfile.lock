@@ -70,7 +70,7 @@ GEM
     pg (0.19.0)
     pg_query (0.11.2)
       json (~> 1.8)
-    pghero (1.6.1)
+    pghero (1.6.2)
       activerecord
     puma (3.6.0)
     rack (2.0.1)

@@ -52,7 +52,7 @@ GEM
     erubi (1.6.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    i18n (0.8.1)
+    i18n (0.8.6)
     jmespath (1.3.1)
     json (2.1.0)
     loofah (2.0.3)
@@ -64,14 +64,14 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
-    minitest (5.10.1)
+    minitest (5.10.3)
     nio4r (2.0.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
     pg (0.20.0)
     pg_query (0.11.4)
       json (>= 1.8, < 3)
-    pghero (1.7.0)
+    pghero (2.0.0)
       activerecord
     puma (3.8.2)
     rack (2.0.1)
@@ -131,4 +131,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.13.7
+   1.14.6

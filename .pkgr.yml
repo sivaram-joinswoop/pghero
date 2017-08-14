@@ -10,17 +10,12 @@ targets:
       - libpq5
       - libxml2
       - libxslt1.1
-  ubuntu-12.04:
+  debian-8:
     dependencies:
       - libpq5
       - libxml2
       - libxslt1.1
   debian-7:
-    dependencies:
-      - libpq5
-      - libxml2
-      - libxslt1.1
-  debian-8:
     dependencies:
       - libpq5
       - libxml2

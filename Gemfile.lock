@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/ankane/pghero.git
+  revision: 3dd2778a17d187d5c20d3507ac7fb4874ae34942
+  specs:
+    pghero (2.0.3)
+      activerecord
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -71,8 +78,6 @@ GEM
     pg (0.20.0)
     pg_query (0.11.4)
       json (>= 1.8, < 3)
-    pghero (2.0.3)
-      activerecord
     puma (3.8.2)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -123,7 +128,7 @@ DEPENDENCIES
   aws-sdk
   pg
   pg_query
-  pghero
+  pghero!
   puma
   rails (~> 5.1.0)
 

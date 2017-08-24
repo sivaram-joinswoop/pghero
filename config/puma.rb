@@ -11,6 +11,14 @@ else
 end
 environment ENV['RACK_ENV'] || 'development'
 
+unless ENV['DATABASE_URL']
+  if File.exist?('config/pghero.yml')
+    ENV['DATABASE_URL'] = 'nulldb:///'
+  else
+    abort "No DATABASE_URL or config/pghero.yml"
+  end
+end
+
 on_worker_boot do
   # worker specific setup
   ActiveSupport.on_load(:active_record) do

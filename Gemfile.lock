@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/ankane/pghero.git
-  revision: 8a6617acc420ce52876b294bd7ccc232c84ef315
+  revision: a9aa0a3df07f2e39357a5d719f25c8e5d284f7b4
   specs:
-    pghero (2.0.4)
+    pghero (2.0.5)
       activerecord
 
 GEM

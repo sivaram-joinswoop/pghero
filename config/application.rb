@@ -5,7 +5,7 @@ require "rails/all"
 module PgHeroSolo
   class Application < Rails::Application
     routes.append do
-      mount PgHero::Engine, at: "/"
+      mount PgHero::Engine, at: ENV["BASE_PATH"] || "/"
     end
 
     config.cache_classes = true

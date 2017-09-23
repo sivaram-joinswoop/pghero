@@ -1,6 +1,5 @@
-GIT
-  remote: https://github.com/ankane/pghero.git
-  revision: 4a9982081ac35c5c33981147a1a576a8d0121b15
+PATH
+  remote: ../pghero
   specs:
     pghero (2.0.5)
       activerecord
@@ -48,13 +47,14 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
-    aws-sdk (2.10.51)
-      aws-sdk-resources (= 2.10.51)
-    aws-sdk-core (2.10.51)
+    aws-partitions (1.23.0)
+    aws-sdk-cloudwatch (1.2.0)
+      aws-sdk-core (~> 3)
+      aws-sigv4 (~> 1.0)
+    aws-sdk-core (3.6.0)
+      aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.10.51)
-      aws-sdk-core (= 2.10.51)
     aws-sigv4 (1.0.2)
     builder (3.2.3)
     concurrent-ruby (1.0.5)
@@ -128,7 +128,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-nulldb-adapter
-  aws-sdk (~> 2)
+  aws-sdk-cloudwatch
   pg
   pg_query
   pghero!

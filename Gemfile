@@ -4,7 +4,7 @@ ruby "2.4.2"
 
 gem "rails", "~> 5.1.0"
 gem "pg"
-gem "pghero", path: "~/open_source/pghero"
+gem "pghero", git: "https://github.com/ankane/pghero.git"
 gem "pg_query"
 gem "aws-sdk-cloudwatch"
 gem "puma"

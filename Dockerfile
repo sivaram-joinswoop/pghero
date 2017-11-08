@@ -1,9 +1,10 @@
-FROM ruby:2.4.2
+FROM ruby:2.4.2-alpine3.6
 
 MAINTAINER Andrew Kane <andrew@chartkick.com>
 
-RUN apt-get update && apt-get install -qq -y --no-install-recommends \
-  build-essential nodejs libpq-dev
+RUN apk add --update ruby-dev build-base \
+  libxml2-dev libxslt-dev pcre-dev libffi-dev \
+  postgresql-dev
 
 ENV INSTALL_PATH /app
 

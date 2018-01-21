@@ -10,6 +10,11 @@ targets:
       - libpq5
       - libxml2
       - libxslt1.1
+  debian-9:
+    dependencies:
+      - libpq5
+      - libxml2
+      - libxslt1.1
   debian-8:
     dependencies:
       - libpq5

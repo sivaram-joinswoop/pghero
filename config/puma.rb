@@ -9,7 +9,7 @@ if ENV['BIND']
 else
   port ENV['PORT'] || 3000
 end
-environment ENV['RACK_ENV'] || 'development'
+environment ENV['RACK_ENV'] || 'production'
 
 unless ENV['DATABASE_URL']
   if File.exist?('config/pghero.yml')

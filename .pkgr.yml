@@ -30,6 +30,11 @@ targets:
       - libxml2
       - libxslt
       - postgresql-libs
+  centos-6:
+    dependencies:
+      - libxml2
+      - libxslt
+      - postgresql-libs
   sles-12:
     dependencies:
       - libxml2

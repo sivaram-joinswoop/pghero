@@ -8,5 +8,5 @@ gem "pghero", git: "https://github.com/ankane/pghero.git"
 gem "pg_query"
 gem "aws-sdk-cloudwatch"
 gem "puma"
-gem "activerecord-nulldb-adapter"
+gem "activerecord-nulldb-adapter", require: false
 gem "tzinfo-data"

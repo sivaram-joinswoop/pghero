@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/ankane/pghero.git
+  revision: 80960454505d3436abfdc511090fe87b186ac096
+  specs:
+    pghero (2.2.0)
+      activerecord
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -46,11 +53,11 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     aws-eventstream (1.0.1)
-    aws-partitions (1.102.0)
-    aws-sdk-cloudwatch (1.6.0)
-      aws-sdk-core (~> 3)
+    aws-partitions (1.104.0)
+    aws-sdk-cloudwatch (1.10.0)
+      aws-sdk-core (~> 3, >= 3.26.0)
       aws-sigv4 (~> 1.0)
-    aws-sdk-core (3.25.0)
+    aws-sdk-core (3.27.0)
       aws-eventstream (~> 1.0)
       aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.0)
@@ -70,7 +77,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
-    marcel (0.3.2)
+    marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (0.9.0)
     mimemagic (0.3.2)
@@ -82,8 +89,6 @@ GEM
       mini_portile2 (~> 2.3.0)
     pg (0.21.0)
     pg_query (1.0.2)
-    pghero (2.2.0)
-      activerecord
     puma (3.12.0)
     rack (2.0.5)
     rack-test (1.1.0)
@@ -138,7 +143,7 @@ DEPENDENCIES
   aws-sdk-cloudwatch
   pg (< 1)
   pg_query
-  pghero
+  pghero!
   puma
   rails (~> 5.2.0)
   tzinfo-data

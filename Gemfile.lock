@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ankane/pghero.git
-  revision: 80960454505d3436abfdc511090fe87b186ac096
+  revision: 4b3b2d08c152d2e67bbce1b704a1efe51321d81b
   specs:
     pghero (2.2.0)
       activerecord
@@ -53,11 +53,11 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     aws-eventstream (1.0.1)
-    aws-partitions (1.104.0)
-    aws-sdk-cloudwatch (1.10.0)
+    aws-partitions (1.107.0)
+    aws-sdk-cloudwatch (1.12.0)
       aws-sdk-core (~> 3, >= 3.26.0)
       aws-sigv4 (~> 1.0)
-    aws-sdk-core (3.27.0)
+    aws-sdk-core (3.36.0)
       aws-eventstream (~> 1.0)
       aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.0)
@@ -69,13 +69,13 @@ GEM
     erubi (1.7.1)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.1.0)
+    i18n (1.1.1)
       concurrent-ruby (~> 1.0)
     jmespath (1.4.0)
-    loofah (2.2.2)
+    loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.7.0)
+    mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
@@ -85,10 +85,10 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     nio4r (2.3.1)
-    nokogiri (1.8.4)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     pg (0.21.0)
-    pg_query (1.0.2)
+    pg_query (1.1.0)
     puma (3.12.0)
     rack (2.0.5)
     rack-test (1.1.0)
@@ -129,7 +129,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2018.5)
+    tzinfo-data (1.2018.7)
       tzinfo (>= 1.0.0)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
@@ -152,4 +152,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.4
+   1.17.1

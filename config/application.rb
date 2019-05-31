@@ -2,6 +2,14 @@ require "bundler/setup"
 Bundler.require
 require "rails/all"
 
+unless ENV["DATABASE_URL"]
+  if File.exist?(PgHero.config_path)
+    ENV["DATABASE_URL"] = "nulldb:///"
+  else
+    abort "No DATABASE_URL or config/pghero.yml"
+  end
+end
+
 module PgHeroSolo
   class Application < Rails::Application
     routes.append do

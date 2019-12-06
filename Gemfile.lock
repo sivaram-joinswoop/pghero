@@ -85,7 +85,7 @@ GEM
     pg_query (1.1.0)
     pghero (2.2.1)
       activerecord
-    puma (3.12.1)
+    puma (3.12.2)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
